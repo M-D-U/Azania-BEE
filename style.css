@@ -1,7 +1,7 @@
 body.main {
     position: relative;
     min-height: 100vh;
-    background: url('src/rineshkumar-ghirao-UdDjFekHQuk-unsplash.jpg') center/cover no-repeat;
+    background: url('src/azania\ team\ work.jpg') center/cover no-repeat;
 }
 
 /* Dark overlay over the entire body */
@@ -12,7 +12,7 @@ body.main::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+    background-color: rgba(0, 0, 0, 0.2); /* 50% dark overlay */
     z-index: -1; /* Push it behind content */
 }
 
@@ -22,7 +22,11 @@ body.main::before {
 }
 
 /* Navbar styling */
+.navbar{
+    background-color: rgba(206, 205, 205, 0.9) !important;
+}
 .navbar .nav-link {
+    
     font-weight: 500;
     color: #333 !important;
 }
@@ -35,4 +39,54 @@ body.main::before {
     font-weight: 800 !important;
 }
 
+/* .profile-circle{
+    background-color: orange;
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+} */
+ .profile-circle {
+    background-color: orange;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    margin-left: auto; /* Pushes it to the right */
+}
 
+.businessmanImage{
+    /* height: 380px;
+    width: 380px; */
+    height: 420px;
+    width: 420px;
+    margin-bottom: 150px;
+    display: block;
+    margin: 0 auto !important;
+    border-radius: 50%;
+}
+
+.getQuoteBtn{
+    font-weight: 900 !important;
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px 18px;
+  font-size: 28px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
