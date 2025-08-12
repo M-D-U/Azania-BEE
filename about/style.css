@@ -1,0 +1,585 @@
+/* =================================
+   MAIN STYLES.CSS - Consolidated Styles
+   ================================= */
+
+/* =================================
+   1. GLOBAL VARIABLES & RESET
+   ================================= */
+:root {
+    --primary-orange: #f58220;
+    --primary-orange-gradient: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+    --primary-black: #000;
+    --text-color: #333;
+    --white: #fff;
+    --light-gray: #f8f8f8;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* =================================
+   2. TYPOGRAPHY
+   ================================= */
+.section-title {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.section-title .orange-text,
+.section-title .our {
+    color: var(--primary-orange);
+}
+
+.section-title .black-text {
+    color: var(--primary-black);
+}
+
+/* =================================
+   3. ABOUT US SECTION
+   ================================= */
+.about-us {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--primary-black);
+}
+
+.decor-line {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 120px;
+    opacity: 0.8;
+}
+
+/* =================================
+   4. WHY US SECTION
+   ================================= */
+.why-us {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.why-list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.why-list i {
+    color: var(--primary-orange);
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.why-image {
+    max-width: 80%;
+}
+
+/* =================================
+   5. VALUES SECTION
+   ================================= */
+.values-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: var(--transition);
+}
+
+.value-item:hover {
+    transform: translateX(5px);
+}
+
+.number-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--primary-black);
+    border: 8px solid var(--primary-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.value-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* =================================
+   6. VISION & MISSION SECTION
+   ================================= */
+.vision-mission-section {
+    display: flex;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.left-section {
+    background-color: var(--primary-black);
+    color: var(--white);
+    flex: 1;
+    padding: 60px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    color: var(--primary-black);
+    padding: 20px 40px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.section-header .mission-part {
+    color: var(--primary-orange);
+}
+
+.vision-content {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.lightbulb-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--white);
+    border-radius: 50% 50% 50% 0;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.lightbulb-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 8px;
+    background: var(--white);
+}
+
+.lightbulb-icon::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    right: 10px;
+    height: 4px;
+    background: var(--white);
+    border-radius: 2px;
+    box-shadow: 
+        -8px 8px 0 var(--white),
+        8px 8px 0 var(--white),
+        -12px 16px 0 var(--white),
+        12px 16px 0 var(--white);
+}
+
+.vision-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: var(--white);
+}
+
+.vision-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.right-section {
+    background: var(--primary-orange-gradient);
+    color: var(--white);
+    flex: 1;
+    padding: 80px 40px 40px 40px;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mission-content {
+    margin-left: 80px;
+}
+
+.mission-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.target-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.target-icon::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.target-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.target-icon .arrow {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid var(--white);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(45deg);
+}
+
+.mission-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =================================
+   7. EXPERIENCE SECTION
+   ================================= */
+.experience-section {
+    display: flex;
+    min-height: 500px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-orange-gradient);
+}
+
+.experience-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right-column {
+    flex: 1;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.experience-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.experience-text:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--primary-orange);
+}
+
+/* =================================
+   8. CREDENTIALS SECTION
+   ================================= */
+.credentials-section {
+    background-color: var(--white);
+    padding: 80px 20px;
+}
+
+.credentials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.credential-card {
+    background: var(--primary-orange-gradient);
+    color: var(--white);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.credential-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+.credential-card:hover::before {
+    animation: shimmer 0.6s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+.credential-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+}
+
+.credential-card.animate {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.card-content {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.card-logo {
+    width: 200px;
+    height: auto;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.logo-placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* =================================
+   9. RESPONSIVE DESIGN
+   ================================= */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+
+    /* About & Why sections */
+    .about-text,
+    .why-list {
+        text-align: center;
+    }
+
+    .decor-line {
+        display: none;
+    }
+
+    /* Values */
+    .values-container {
+        padding: 20px;
+    }
+    
+    .number-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    .value-text {
+        font-size: 24px;
+    }
+
+    /* Vision & Mission */
+    .vision-mission-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .right-section {
+        clip-path: none;
+        margin-left: 0;
+    }
+
+    .mission-content {
+        margin-left: 0;
+    }
+
+    .section-header {
+        position: relative;
+        top: 0;
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+
+    .left-section, .right-section {
+        padding: 40px 20px;
+    }
+
+    .vision-title, .mission-title {
+        font-size: 32px;
+    }
+
+    /* Experience */
+    .experience-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 30px 20px;
+    }
+
+    .experience-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Credentials */
+    .credentials-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .credential-card {
+        padding: 30px 20px;
+    }
+
+    .card-content {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .right-column {
+        padding: 20px 15px;
+    }
+
+    .experience-text {
+        font-size: 14px;
+    }
+
+    .credentials-section {
+        padding: 60px 15px;
+    }
+
+    .credential-card {
+        padding: 25px 15px;
+    }
+}

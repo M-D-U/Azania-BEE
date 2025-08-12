@@ -1,0 +1,89 @@
+.service-header {
+            background-color: #f8f9fa;
+            padding: 60px 0 30px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .service-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .offerings-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+        
+        .offerings-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 18px;
+        }
+        
+        .offerings-list li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #e74c3c;
+            border-radius: 3px;
+        }
+        
+        .offerings-list li[data-checked="true"]:before {
+            background-color: #e74c3c;
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .service-description {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .services-include {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .services-include h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .services-include ol {
+            padding-left: 20px;
+        }
+        
+        .services-include ol li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }

@@ -1,0 +1,326 @@
+.values-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .value-item:hover {
+      transform: translateX(5px);
+    }
+
+    .number-circle {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      color: black;
+      border: 8px solid black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 25px;
+      flex-shrink: 0;
+    }
+
+    .value-text {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    .value-item:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .values-container {
+        padding: 20px;
+      }
+
+      .number-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+
+      .value-text {
+        font-size: 24px;
+      }
+    }
+
+    .containerVisionAndMission {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    /* Left side - Vision */
+    .vision-section {
+      background: black;
+      width: 50%;
+      padding: 40px 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .vision-section h2 {
+      font-weight: 900;
+      font-size: 2.8rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .vision-text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      max-width: 440px;
+    }
+
+    .vision-icon {
+      font-size: 60px;
+      color: white;
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* Right side - Mission */
+    .mission-section {
+      background: #f26722;
+      width: 50%;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      position: relative;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+      color: white;
+    }
+
+    .mission-title {
+      font-weight: 900;
+      font-size: 2.8rem;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+
+    .mission-text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      max-width: 480px;
+    }
+
+    .mission-icon {
+      font-size: 50px;
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+    }
+
+    /* Heading container */
+    .heading {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .heading .mission-highlight {
+      color: #f26722;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        max-width: 95%;
+        margin: 20px auto;
+      }
+
+      .vision-section,
+      .mission-section {
+        width: 100%;
+        clip-path: none;
+        padding: 30px 20px;
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .vision-icon,
+      .mission-icon {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 15px;
+      }
+
+      .vision-text,
+      .mission-text {
+        max-width: 100%;
+      }
+
+      ul.values-list {
+        list-style: none;
+        padding: 0;
+        max-width: 300px;
+      }
+
+      ul.values-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      ul.values-list li .fa-stack {
+        width: 2em;
+        height: 2em;
+        margin-right: 12px;
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      ul.values-list li .fa-stack-1x {
+        color: black;
+      }
+
+      ul.values-list li .number-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        color: white;
+        font-size: 1em;
+        user-select: none;
+      }
+    }
+
+
+/* About Us Section */
+.about-us {
+    background-color: white;
+    position: relative;
+}
+
+.about-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.about-heading .black-text {
+    color: black;
+    display: block;
+}
+
+.about-heading .orange-text {
+    color: #f58220; /* Azania orange */
+    display: block;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #000;
+}
+
+.decor-line {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 120px;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* Why Us Section */
+.why-us {
+    background-color: #fff;
+}
+
+.why-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.why-heading .black-text {
+    color: #000;
+}
+
+.why-heading .orange-text {
+    color: #f58220;
+}
+
+.why-list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.why-list i {
+    color: #f58220;
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.why-image {
+    max-width: 80%;
+}
+
+
+
+@media (max-width: 768px) {
+    .why-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .why-list {
+        text-align: center;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .decor-line {
+        display: none; /* Hide curve on small screens */
+    }
+    .about-text {
+        text-align: center;
+    }
+}
