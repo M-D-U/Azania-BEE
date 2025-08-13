@@ -1,89 +1,143 @@
-.service-header {
-            background-color: #f8f9fa;
-            padding: 60px 0 30px;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            color: #2c3e50;
-            font-weight: 700;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            font-weight: 600;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #e74c3c;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-        
-        .service-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .offerings-list {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 30px;
-        }
-        
-        .offerings-list li {
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-            font-size: 18px;
-        }
-        
-        .offerings-list li:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            border: 2px solid #e74c3c;
-            border-radius: 3px;
-        }
-        
-        .offerings-list li[data-checked="true"]:before {
-            background-color: #e74c3c;
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-        }
-        
-        .service-description {
-            margin-bottom: 30px;
-            font-size: 16px;
-        }
-        
-        .services-include {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        
-        .services-include h3 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        
-        .services-include ol {
-            padding-left: 20px;
-        }
-        
-        .services-include ol li {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
+.service-section {
+    /* background-color: #FF6B35; */
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-title {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 0.85;
+    margin: 0;
+}
+
+.servicesSectionCol {
+    background-color: white;
+}
+
+.SecondServicesCol {
+    background-color: #FF6B35;
+}
+
+.service-orange {
+    color: #FF6B35;
+}
+
+.service-black {
+    color: #000000;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-left: 1rem;
+}
+
+.service-icon .hand {
+    font-size: 3rem;
+    color: #000;
+}
+
+.service-icon .star {
+    font-size: 1.5rem;
+    color: #000;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.offerings-title {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 3rem 0 2rem 0;
+    text-transform: uppercase;
+}
+
+.offerings-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.offerings-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.offerings-list li i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.service-description {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.services-include {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.services-list {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.lightbulb-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+}
+
+.checkboxIcons {
+    height: 48px; /* bigger than text */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.service-description {
+    font-weight: 700;
+}
+.services-list{
+    font-weight: 700;
+}
+
+.services-include{
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .offerings-title {
+        font-size: 1.5rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .service-description,
+    .services-include,
+    .services-list {
+        font-size: 1rem;
+    }
+}
