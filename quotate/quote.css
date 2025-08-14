@@ -1,0 +1,244 @@
+.contact-section {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding: 0;
+        }
+        
+        .contact-form-container {
+            background-color: #FF6B35;
+            padding: 3rem 2.5rem;
+            min-height: 100vh;
+        }
+        
+        .contact-title {
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 2rem;
+            text-decoration: underline;
+            text-decoration-color: white;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 4px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .form-control {
+            background-color: transparent;
+            border: 3px solid white;
+            border-radius: 25px;
+            padding: 12px 20px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+            color: white;
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .date-input-container {
+    position: relative;
+}
+
+.date-icon {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.clear-date-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    display: none;
+}
+
+/* .clear-date-icon:hover {
+    opacity: 1;
+} */
+
+.clear-date-icon.show {
+    display: block;
+}
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .custom-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 4px;
+            margin-right: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        
+        .custom-checkbox.checked {
+            background-color: white;
+        }
+        
+        .custom-checkbox i {
+            color: #FF6B35;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .custom-checkbox.checked i {
+            opacity: 1;
+        }
+        
+        .checkbox-label {
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .quote-container {
+            background-color: white;
+            padding: 3rem 2.5rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .quote-title {
+            font-family: Arial, sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .quote-underline {
+            width: 150px;
+            height: 6px;
+            background-color: #FF6B35;
+            margin-bottom: 2rem;
+        }
+        
+        .quote-description {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .loading-spinner {
+            display: none;
+            margin-left: 10px;
+        }
+        
+        .success-message, .error-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .success-message {
+            background-color: rgba(40, 167, 69, 0.2);
+            border: 1px solid #28a745;
+            color: white;
+        }
+        
+        .error-message {
+            background-color: rgba(220, 53, 69, 0.2);
+            border: 1px solid #dc3545;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form-container,
+            .quote-container {
+                padding: 2rem 1.5rem;
+                min-height: auto;
+            }
+            
+            .quote-container {
+                position: static;
+                height: auto;
+            }
+            
+            .contact-title {
+                font-size: 2rem;
+            }
+            
+            .quote-title {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            
+            .quote-description {
+                font-size: 1rem;
+            }
+        }
