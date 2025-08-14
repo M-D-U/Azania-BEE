@@ -187,8 +187,11 @@
         }
         
         .quote-description {
+            font-family: sans-serif;
+            line-height: 2;
             font-size: 1.1rem;
-            color: #666;
+            font-weight: 800;
+            color: #000;
             line-height: 1.6;
             text-align: center;
         }
