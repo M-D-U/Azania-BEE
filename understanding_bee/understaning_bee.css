@@ -1,0 +1,107 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom hover dropdown */
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #f58220;
+}
+
+.equity-img{
+    border-radius: 10px;
+}
+
+.bbbee-table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-weight: 500; /* Slightly bold text */
+}
+
+.bbbee-table th {
+    background-color: #f58220 !important; /* Orange header */
+    color: white; /* White text */
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.bbbee-table td {
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.bbbee-table tr {
+    height: 60px; /* Make it more square */
+}
+
+
+.bbbee-table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 500;
+}
+
+.bbbee-table th {
+    background-color: #f58220;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.bbbee-table td {
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.bbbee-table tr {
+    height: auto;
+}
+
+.bee-fronting-image {
+    max-width: 100%;
+    height: auto; /* Prevents stretching */
+    border-radius: 10px;
+}
+
+.bee-fronting-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.bee-fronting-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for a polished look */
+}
+/* Animation fallback in case Anime.js fails */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
