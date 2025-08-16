@@ -382,8 +382,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3);
     transition: var(--transition);
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -391,6 +389,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 400px;
+    /* Removed bouncing */
+    opacity: 1;
+    transform: none;
 }
 
 .credential-card::before {
@@ -431,7 +432,8 @@ body {
 
 .credential-card.animate {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: none;
+    /* transform: translateY(0) scale(1); */
 }
 
 .card-content {

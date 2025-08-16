@@ -1,92 +1,98 @@
-body.main {
-    position: relative;
-    min-height: 100vh;
-    background: url('src/azania\ team\ work.jpg') center/cover no-repeat;
-}
+body.main {     
+    position: relative;     
+    min-height: 100vh;     
+    background: url('src/azania\ team\ work.jpg') center/cover no-repeat; 
+}  
 
-/* Dark overlay over the entire body */
-body.main::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* 50% dark overlay */
-    z-index: -1; /* Push it behind content */
-}
+/* Dark overlay over the entire body */ 
+body.main::before {     
+    content: "";     
+    position: fixed;     
+    top: 0;     
+    left: 0;     
+    width: 100%;     
+    height: 100%;     
+    background-color: rgba(0, 0, 0, 0.2); /* 20% dark overlay */     
+    z-index: -1; /* Push it behind content */ 
+}  
 
-/* Hero section spacing */
-.hero-section {
-    padding: 100px 0;
-}
+.hero-section .col-lg-6:last-child {   
+    padding-right: 0; /* removes right padding */ 
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Centers vertically */
+}   
 
-/* Navbar styling */
-.navbar{
-    background-color: rgba(206, 205, 205, 0.9) !important;
-}
-.navbar .nav-link {
-    
-    font-weight: 500;
-    color: #333 !important;
-}
+/* Navbar styling */ 
+.navbar .nav-link {          
+    font-weight: 500;     
+    color: #333 !important; 
+}  
 
-.navbar .nav-link:hover {
-    color: #f58220 !important;
-}
+.navbar .nav-link:hover {     
+    color: #f58220 !important; 
+}  
 
-.navbar .nav-link.active {
-    font-weight: 800 !important;
-}
+.navbar .nav-link.active {     
+    font-weight: 800 !important; 
+}   
 
-/* .profile-circle{
-    background-color: orange;
-    height: 450px;
-    width: 450px;
-    border-radius: 100%;
-} */
- .profile-circle {
-    background-color: orange;
-    height: 500px;
-    width: 500px;
-    border-radius: 100%;
-    margin-left: auto; /* Pushes it to the right */
-}
+/* Default transparent navbar */ 
+.navbar {     
+    transition: background-color 0.3s ease;     
+    background-color: rgba(206, 205, 205, 0.5) !important; 
+}  
 
-.businessmanImage{
-    /* height: 380px;
-    width: 380px; */
-    height: 420px;
-    width: 420px;
-    margin-bottom: 150px;
-    display: block;
-    margin: 0 auto !important;
+/* Scrolled navbar */ 
+.navbar.scrolled {     
+    background-color: rgba(206, 205, 205, 1) !important; /* Dark grey */ 
+} 
+
+.profile-circle {     
+    background-color: #f58220; /* Orange color */     
+    height: 500px;     
+    width: 500px;     
     border-radius: 50%;
-}
+    position: relative; /* This allows absolute positioning of child elements */
+    display: flex;
+    align-items: flex-end; /* Aligns image to bottom of circle */
+    justify-content: center; /* Centers horizontally */
+}  
 
-.getQuoteBtn{
-    font-weight: 900 !important;
-}
+.businessmanImage {  
+    /* margin-left: 100px !important;    */
+    height: 420px;     
+    width: 420px;     
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image covers the area properly */
+    position: absolute;
+    bottom: 0; /* Aligns to bottom of circle */
+    right: 20px; /* Positions towards the right side */
+    transform: translateX(10px); /* Fine-tune horizontal position */
+}  
 
+.getQuoteBtn{     
+    font-weight: 900 !important; 
+}   
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  padding: 15px 18px;
-  font-size: 28px;
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.whatsapp-float {   
+    position: fixed;   
+    bottom: 20px;   
+    left: 20px;   
+    background-color: #25D366;   
+    color: white;   
+    border-radius: 50%;   
+    padding: 15px 18px;   
+    font-size: 28px;   
+    z-index: 1000;   
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);   
+    transition: background-color 0.3s ease;   
+    text-decoration: none;   
+    display: flex;   
+    align-items: center;   
+    justify-content: center; 
+}  
 
-.whatsapp-float:hover {
-  background-color: #1ebe57;
+.whatsapp-float:hover {   
+    background-color: #1ebe57; 
 }

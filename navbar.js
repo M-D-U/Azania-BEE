@@ -10,3 +10,14 @@ document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
                 });
             });
         });
+
+
+
+        window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) { // Change after 50px scroll
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
