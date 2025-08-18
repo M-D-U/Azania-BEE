@@ -277,8 +277,36 @@ body.main::before {
     left: 0;
     width: 120px;
     opacity: 0.8;
+} */
+
+/* About Us Section */
+.about-title {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1;
 }
 
+.about-black {
+  color: black;
+}
+
+.about-orange {
+  color: #f58220; /* Azania orange */
+}
+
+.about-content {
+  font-weight: 900;
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 2;
+  text-align: justify;
+  margin: 50px;
+}
+
+/* .img-fluid{
+    margin: 0 auto;
+    display: block;
+} */
 /* ===========================
    Why Us Section
 =========================== */
@@ -287,7 +315,7 @@ body.main::before {
 }
 
 .why-heading {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
 }
@@ -472,4 +500,77 @@ body.main::before {
         height: 320px;
         width: 320px;
     }
+}
+
+
+/* our values */
+
+/* Adjust Values Section for smaller screens */
+@media (max-width: 991px) {
+  .why-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .why-image {
+    max-width: 80%;
+    /* margin: 0 auto 20px auto; */
+    display: block;
+  }
+
+  .values-container {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .value-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .number-circle {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-heading {
+    font-size: 2rem;
+  }
+
+  .value-text {
+    font-size: 20px;
+  }
+}
+
+
+/* about us */
+
+/* Tablet adjustments */
+@media (max-width: 991px) {
+  .about-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/about/about.css">
-  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="stylesheet" href="../style.css"> -->
   <link rel="stylesheet" href="/about/vision_mission.css">
   <link rel="stylesheet" href="/about/experince.css">
   <link rel="stylesheet" href="/about/ourCredentials.css">
@@ -74,15 +74,11 @@
                     <li class="nav-item"><a class="nav-link" href="/understanding_bee/understanding_bee.html">Understanding B-BBEE</a></li>
                     <li class="nav-item"><a class="nav-link" href="/faqs/faqs.html">FAQs</a></li>
                     <li class="nav-item d-flex gap-1 me-2 ms-5">
-                        <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <!-- <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i
-                                class="fab fa-x-twitter"></i></a> -->
-                    </li>
+            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-linkedin-in"></i></a>
+            <!-- <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-x-twitter"></i></a> -->
+        </li>
                     <li class="nav-item ms-3">
                         <a href="/quotate/quote.html" class="btn btn-warning fw-bold text-white getQuoteBtn">GET A QUOTE</a>
                     </li>
@@ -94,38 +90,48 @@
 
   <!-- About Us Section -->
   
-  <section class="about-us">
-    <div class="container">
-      <div class="row align-items-center">
-      <div class="container-fluid">
-        <div class="row align-items-start">
-            <div class="col-lg-3 col-md-4 col-12 py-3">
-                <div class="about-title" style="margin-left: 100px;">
-                    <div class="about-black">ABOUT</div>
-                    <div class="about-orange">US</div>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-8 col-12">
-                <div class="about-content" style="margin-top: 100px; margin-right: 200px; font-weight: 900; font-size: medium;font-family: sans-serif; line-height: 2; ">
-                    Azania B-BBEE Solutions Pty (Ltd) is a 100% black-owned service provider established in 2020, offering various B-BBEE services with a Level One B-BBEE status. We serve multiple business sectors nationally through an independent audit process aligned with Broad-Based Black Economic Empowerment Codes. Committed to service excellence, Azania specializes in B-BBEE consulting, training, skills development, and other transformation initiatives. This team comprises of professionals from finance and commerce, supported by a network of technical experts and specialists, ensuring high-quality service for clients.
-                </div>
-            </div>
+<section class="about-us py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- Title -->
+      <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0 text-center text-md-start">
+        <div class="about-title">
+          <div class="about-black">ABOUT</div>
+          <div class="about-orange">US</div>
         </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-9 col-md-8 col-12">
+        <div class="about-content">
+          Azania B-BBEE Solutions Pty (Ltd) is a 100% black-owned service provider
+          established in 2020, offering various B-BBEE services with a Level One B-BBEE
+          status. We serve multiple business sectors nationally through an independent
+          audit process aligned with Broad-Based Black Economic Empowerment Codes.
+          Committed to service excellence, Azania specializes in B-BBEE consulting,
+          training, skills development, and other transformation initiatives. This team
+          comprises professionals from finance and commerce, supported by a network of
+          technical experts and specialists, ensuring high-quality service for clients.
+        </div>
+      </div>
+
     </div>
-    </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Why Us Section -->
   <section class="why-us">
-    <div class="container">
-      <div class="row align-items-center">
+    <div class="container" style="margin-left: 205px !important;">
+      <div class="row align-items-center" >
         <!-- Left Side -->
-        <div class="col-lg-6" style="padding-left: 50px;">
+        <div class="col-lg-8">
           <h1 class="why-heading">
             <span class="black-text">WHY</span>
             <span class="orange-text">US?</span>
           </h1>
-          <ul class="why-list list-unstyled">
+          <ul class="why-list list-unstyled" style="font-family: sans-serif; font-weight: bold;">
             <li><i class="far fa-check-square"></i> We offer express services</li>
             <li><i class="far fa-check-square"></i> We have expertise in house</li>
             <li><i class="far fa-check-square"></i> We offer competitive prices</li>
@@ -135,8 +141,8 @@
 
         </div>
         <!-- Right Side -->
-        <div class="col-lg-6">
-          <img src="../src/why_choose_us.jpeg" alt="Why Choose Us?" class="why-image img-fluid">
+        <div class="col-lg-4">
+          <img src="../src/why_choose_us.jpeg" alt="Why Choose Us?" class="why-image img-fluid" style="height: 550px;">
         </div>
       </div>
     </div>
@@ -149,12 +155,12 @@
       
       <!-- Vision -->
       <div class="col-lg-6 vision-block d-flex flex-column justify-content-center text-white p-5">
-        <h2 class="section-title" style="color: white;"><span class="highlight">VISION</span> AND MISSION</h2>
+        <h2 class="section-title" style="color: black;"><span class="highlight">VISION</span> AND MISSION</h2>
         <div class="content mt-4">
           <h3>VISION</h3>
           <div class="d-flex align-items-start mt-3">
-            <i class="fas fa-lightbulb fa-2x me-3"></i>
-            <p>
+            <i class="fas fa-lightbulb fa-2x me-3" style="color: #FF6B35;"></i>
+            <p style="color: #000; font-weight: 900;font-family: sans-serif;">
               Is to be the firm of choice in innovation and transformation,
               which is distinguished by excellence and quality. As an
               organization we are entrenched in ethics and integrity.
@@ -167,8 +173,8 @@
       <div class="col-lg-6 mission-block d-flex flex-column justify-content-center text-white p-5">
         <h3>MISSION</h3>
         <div class="d-flex align-items-start mt-3">
-          <i class="fas fa-bullseye fa-2x me-3"></i>
-          <p>
+          <i class="fas fa-bullseye fa-2x me-3" style="color: #000;"></i>
+          <p style="color: #FF6B35; font-weight: 900;font-family: sans-serif;">
             Is to achieve exponential growth and expansion through various sources
             including service offering, Business Acquisition, Joint Venture and
             Network firms by empowering and developing our clients, staff and communities.
@@ -179,88 +185,55 @@
   </div>
 </section>
 
-  <!-- <section class="vision-mission-section">
-    <div class="left-section">
-      <div class="section-header">
-        VISION AND <span class="mission-part"><br> MISSION</span>
-      </div>
-      <div class="vision-content">
-        <div class="lightbulb-icon">
-          <div class="arrow"></div>
-        </div>
-        <div class="vision-text">
-          <h2 class="vision-title">VISION</h2>
-          <p class="vision-description">
-            Is to be the firm of choice in innovation and transformation,
-            which is distinguished by excellence and quality. As an
-            organization we are entrenched in ethics and integrity.
-          </p>
-        </div>
-      </div>
-    </div>
+ 
 
-    <div class="right-section">
-      <div class="mission-content">
-        <h2 class="mission-title">MISSION</h2>
-        <div class="target-icon">
-          <div class="arrow"></div>
-        </div>
-        <p class="mission-description">
-          Is to achieve exponential growth and expansion
-          through various sources including service offering,
-          Business Acquisition, Joint Venture and Network
-          firms by empowering and developing our clients,
-          staff and communities.
-        </p>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="why-us py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Side -->
-        <div class="col-lg-8">
+<section class="why-us py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side -->
+      <div class="col-lg-8 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+        
           <h1 class="why-heading">
-            <span class="black-text">OUR</span>
-            <span class="orange-text">VALUES</span>
-          </h1>
-          <img src="/src/image-removebg-preview.png">
-
+          <span class="black-text">OUR</span>
+          <span class="orange-text">VALUES</span>
+        </h1>
+        <div >
+        <img src="/src/image-removebg-preview.png" class="img-fluid why-image" alt="Our Values" style="margin: 0 auto; display: block !important;">
         </div>
-        <!-- Right Side -->
-        <div class="col-lg-4 text-center">
-          <div class="values-container">
-            <div class="value-item">
-              <div class="number-circle">1</div>
-              <h2 class="value-text">Empowerment</h2>
-            </div>
-
-            <div class="value-item">
-              <div class="number-circle">2</div>
-              <h2 class="value-text">Integrity</h2>
-            </div>
-
-            <div class="value-item">
-              <div class="number-circle">3</div>
-              <h2 class="value-text">Innovation</h2>
-            </div>
-
-            <div class="value-item">
-              <div class="number-circle">4</div>
-              <h2 class="value-text">Partnership</h2>
-            </div>
-
-            <div class="value-item">
-              <div class="number-circle">5</div>
-              <h2 class="value-text">Quality</h2>
-            </div>
+        
+      </div>
+      
+      <!-- Right Side -->
+      <div class="col-lg-4 col-md-12 text-center">
+        <div class="values-container">
+          <div class="value-item">
+            <div class="number-circle">1</div>
+            <h2 class="value-text">Empowerment</h2>
           </div>
-          <!-- <img src="src/why_choose_us.jpeg" alt="Why Choose Us?" class="why-image img-fluid"> -->
+          <div class="value-item">
+            <div class="number-circle">2</div>
+            <h2 class="value-text">Integrity</h2>
+          </div>
+          <div class="value-item">
+            <div class="number-circle">3</div>
+            <h2 class="value-text">Innovation</h2>
+          </div>
+          <div class="value-item">
+            <div class="number-circle">4</div>
+            <h2 class="value-text">Partnership</h2>
+          </div>
+          <div class="value-item">
+            <div class="number-circle">5</div>
+            <h2 class="value-text">Quality</h2>
+          </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- experience section -->
   <section class="experience-section">

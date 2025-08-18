@@ -65,7 +65,7 @@ body.main::before {
     width: 420px;     
     border-radius: 50%;
     object-fit: cover; /* Ensures image covers the area properly */
-    position: absolute;
+    /* position: absolute; */
     bottom: 0; /* Aligns to bottom of circle */
     right: 20px; /* Positions towards the right side */
     transform: translateX(10px); /* Fine-tune horizontal position */
