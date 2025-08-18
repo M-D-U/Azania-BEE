@@ -1,326 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/about/about.css">
-  <!-- <link rel="stylesheet" href="../style.css"> -->
-  <link rel="stylesheet" href="/about/vision_mission.css">
-  <link rel="stylesheet" href="/about/experince.css">
-  <link rel="stylesheet" href="/about/ourCredentials.css">
-  <link rel="stylesheet" href="../footer.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-  <style>
-    .about-title {
-            font-family: Arial, sans-serif;
-            font-weight: 900;
-            font-size: 6rem;
-            line-height: 0.9;
-            margin: 0;
-        }
-        .about-black {
-            color: #000000;
-        }
-        .about-orange {
-            color: #FF6B35;
-        }
-        .about-content {
-            font-family: Arial, sans-serif;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #333333;
-            margin-top: 2rem;
-        }
-        @media (max-width: 768px) {
-            .about-title {
-                font-size: 4rem;
-                text-align: center;
-                margin-bottom: 2rem;
-            }
-            .about-content {
-                margin-top: 0;
-            }
-        }
-    </style>
-  </style>
-  <title>About Azania BEE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Azania BEE</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../footer.css">
 </head>
 
 <body class="main">
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../src/azania_bee_logo-removebg-preview.png" 
+           alt="Azania BEE Logo" height="40" class="me-2">
+    </a>
 
-  <!-- Navbar -->
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 "
-        style="background-color: rgba(206, 205, 205, 0.5) !important;">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="../src/azania_bee_logo-removebg-preview.png" alt="Azania BEE Logo" height="40" class="me-2">
-            </a>
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/services/services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/appleals_complains/appleals_complains.html">Appeals & Complaints</a></li>
+        <li class="nav-item"><a class="nav-link" href="/understanding_bee/understanding_bee.html">Understanding B-BBEE</a></li>
+        <li class="nav-item"><a class="nav-link" href="/faqs/faqs.html">FAQs</a></li>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link " href="/services/services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/appleals_complains/appleals_complains.html">Appeals & Complaints</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/understanding_bee/understanding_bee.html">Understanding B-BBEE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/faqs/faqs.html">FAQs</a></li>
-                    <li class="nav-item d-flex gap-1 me-2 ms-5">
-            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-linkedin-in"></i></a>
-            <!-- <a href="#" class="text-dark border border-2 border-dark p-2 socialIcons"><i class="fab fa-x-twitter"></i></a> -->
+        <!-- Social Icons -->
+        <li class="nav-item d-flex gap-2 ms-lg-4">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </li>
-                    <li class="nav-item ms-3">
-                        <a href="/quotate/quote.html" class="btn btn-warning fw-bold text-white getQuoteBtn">GET A QUOTE</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+        <!-- Quote Button -->
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a href="/quotate/quote.html" class="btn btn-warning fw-bold text-white get-quote-btn">
+            GET A QUOTE
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-  <!-- About Us Section -->
-  
+    <!-- About Us Section -->
 <section class="about-us py-5">
   <div class="container">
-    <div class="row align-items-start">
-      
-      <!-- Title -->
-      <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0 text-center text-md-start">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-4 col-12 py-3 text-center text-md-start">
         <div class="about-title">
           <div class="about-black">ABOUT</div>
           <div class="about-orange">US</div>
         </div>
       </div>
 
-      <!-- Content -->
       <div class="col-lg-9 col-md-8 col-12">
         <div class="about-content">
-          Azania B-BBEE Solutions Pty (Ltd) is a 100% black-owned service provider
-          established in 2020, offering various B-BBEE services with a Level One B-BBEE
-          status. We serve multiple business sectors nationally through an independent
-          audit process aligned with Broad-Based Black Economic Empowerment Codes.
-          Committed to service excellence, Azania specializes in B-BBEE consulting,
-          training, skills development, and other transformation initiatives. This team
-          comprises professionals from finance and commerce, supported by a network of
-          technical experts and specialists, ensuring high-quality service for clients.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- Why Us Section -->
-  <section class="why-us">
-    <div class="container" style="margin-left: 205px !important;">
-      <div class="row align-items-center" >
-        <!-- Left Side -->
-        <div class="col-lg-8">
-          <h1 class="why-heading">
-            <span class="black-text">WHY</span>
-            <span class="orange-text">US?</span>
-          </h1>
-          <ul class="why-list list-unstyled" style="font-family: sans-serif; font-weight: bold;">
-            <li><i class="far fa-check-square"></i> We offer express services</li>
-            <li><i class="far fa-check-square"></i> We have expertise in house</li>
-            <li><i class="far fa-check-square"></i> We offer competitive prices</li>
-            <li><i class="far fa-check-square"></i> We are up to date with the latest legislature and BEE regulation
-              policies</li>
-          </ul>
-
-        </div>
-        <!-- Right Side -->
-        <div class="col-lg-4">
-          <img src="../src/why_choose_us.jpeg" alt="Why Choose Us?" class="why-image img-fluid" style="height: 550px;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- vision-mission-section -->
-<section class="vision-mission-section">
-  <div class="container-fluid p-0">
-    <div class="row g-0 align-items-stretch">
-      
-      <!-- Vision -->
-      <div class="col-lg-6 vision-block d-flex flex-column justify-content-center text-white p-5">
-        <h2 class="section-title" style="color: black;"><span class="highlight">VISION</span> AND MISSION</h2>
-        <div class="content mt-4">
-          <h3>VISION</h3>
-          <div class="d-flex align-items-start mt-3">
-            <i class="fas fa-lightbulb fa-2x me-3" style="color: #FF6B35;"></i>
-            <p style="color: #000; font-weight: 900;font-family: sans-serif;">
-              Is to be the firm of choice in innovation and transformation,
-              which is distinguished by excellence and quality. As an
-              organization we are entrenched in ethics and integrity.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mission -->
-      <div class="col-lg-6 mission-block d-flex flex-column justify-content-center text-white p-5">
-        <h3>MISSION</h3>
-        <div class="d-flex align-items-start mt-3">
-          <i class="fas fa-bullseye fa-2x me-3" style="color: #000;"></i>
-          <p style="color: #FF6B35; font-weight: 900;font-family: sans-serif;">
-            Is to achieve exponential growth and expansion through various sources
-            including service offering, Business Acquisition, Joint Venture and
-            Network firms by empowering and developing our clients, staff and communities.
-          </p>
+          Azania B-BBEE Solutions Pty (Ltd) is a 100% black-owned service provider established in 2020, offering various
+          B-BBEE services with a Level One B-BBEE status. We serve multiple business sectors nationally through an
+          independent audit process aligned with Broad-Based Black Economic Empowerment Codes. Committed to service
+          excellence, Azania specializes in B-BBEE consulting, training, skills development, and other transformation
+          initiatives. This team comprises professionals from finance and commerce, supported by a network of technical
+          experts and specialists, ensuring high-quality service for clients.
         </div>
       </div>
     </div>
   </div>
 </section>
 
- 
-
+<!-- Why Us Section -->
 <section class="why-us py-5">
   <div class="container">
     <div class="row align-items-center">
-      
-      <!-- Left Side -->
-      <div class="col-lg-8 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
-        
-          <h1 class="why-heading">
-          <span class="black-text">OUR</span>
-          <span class="orange-text">VALUES</span>
+      <!-- Left Content -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h1 class="whyus-heading">
+          <span class="black-text">WHY</span>
+          <span class="orange-text">US</span>?
         </h1>
-        <div >
-        <img src="/src/image-removebg-preview.png" class="img-fluid why-image" alt="Our Values" style="margin: 0 auto; display: block !important;">
-        </div>
-        
-      </div>
-      
-      <!-- Right Side -->
-      <div class="col-lg-4 col-md-12 text-center">
-        <div class="values-container">
-          <div class="value-item">
-            <div class="number-circle">1</div>
-            <h2 class="value-text">Empowerment</h2>
-          </div>
-          <div class="value-item">
-            <div class="number-circle">2</div>
-            <h2 class="value-text">Integrity</h2>
-          </div>
-          <div class="value-item">
-            <div class="number-circle">3</div>
-            <h2 class="value-text">Innovation</h2>
-          </div>
-          <div class="value-item">
-            <div class="number-circle">4</div>
-            <h2 class="value-text">Partnership</h2>
-          </div>
-          <div class="value-item">
-            <div class="number-circle">5</div>
-            <h2 class="value-text">Quality</h2>
-          </div>
-        </div>
+        <ul class="why-list mt-4">
+  <li>
+    <img src="/src/check-box.png" alt="checkbox" class="checkbox-icon">
+    SANAS Accredited Verification Agency
+  </li>
+  <li>
+    <img src="/src/check-box.png" alt="checkbox" class="checkbox-icon">
+    Independent, transparent verification processes
+  </li>
+  <li>
+    <img src="/src/check-box.png" alt="checkbox" class="checkbox-icon">
+    Experienced finance & commerce professionals
+  </li>
+  <li>
+    <img src="/src/check-box.png" alt="checkbox" class="checkbox-icon">
+    Customized B-BBEE consulting & training
+  </li>
+  <li>
+    <img src="/src/check-box.png" alt="checkbox" class="checkbox-icon">
+    Nationwide service across multiple sectors
+  </li>
+</ul>
+
+
       </div>
 
+      <!-- Right Image -->
+      <div class="col-lg-6 col-md-12 text-center">
+        <img src="/src/why_choose_us.jpeg" alt="Why Us Team" class="whyus-image img-fluid">
+      </div>
     </div>
   </div>
 </section>
 
+    <!-- Vision and Mission Section -->
+    <section class="vision-mission-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-stretch">
+                <!-- Vision -->
+                <div class="col-lg-6 vision-block d-flex flex-column justify-content-center p-4 p-lg-5">
+                    <h2 class="section-title mb-4">
+                        <span class="highlight">VISION</span> AND MISSION
+                    </h2>
+                    <div class="vision-content mt-4">
+                        <h3 class="vision-title">VISION</h3>
+                        <div class="d-flex align-items-start mt-3 flex-column flex-sm-row">
+                            <i class="fas fa-lightbulb fa-2x me-0 me-sm-3 mb-3 mb-sm-0" style="color: #FF6B35;"></i>
+                            <p class="vision-text">
+                                Is to be the firm of choice in innovation and transformation, which is distinguished by excellence and quality. As an organization we are entrenched in ethics and integrity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- experience section -->
-  <section class="experience-section">
-    <div class="left-column">
-      <img src="../src/experiance-removebg-preview.png" alt="Experience" class="experience-image" width="500px"
-        height="500px">
-    </div>
-
-    <div class="right-column">
-      <p class="experience-text">
-        <span class="highlight">Azania BEE Solutions</span> is a brand backed by leadership that has 10
-        years of industry experience and a client base across industries, sectors,
-        and regulatory environments.
-      </p>
-
-      <p class="experience-text">
-        Azania is best positioned and suited to draw from our expertise to ensure
-        that the client receives an outstanding experience.
-      </p>
-
-      <p class="experience-text">
-        <span class="highlight">Azania BEE Solutions</span> offers B-BBEEE Verification services to businesses of
-        all sizes (EME, QSE or Generic). We have Branches in Gauteng, Limpopo
-        and KZN
-      </p>
-    </div>
-  </section>
-
-  <!-- Our credentials section -->
-  <section class="credentials-section">
-    <div class="credentials-container">
-      <h2 class="section-title"><span class="our">Our</span> Credentials</h2>
-
-      <div class="credentials-grid">
-        <div class="credential-card" data-delay="0">
-          <div class="card-content">
-            (ABP) is established to lead the Broad-Based Black Economic Empowerment (B-BBEE) Verification and BEE
-            Consultancy industry as it takes up a vital role in the transformation of the South African economy. The
-            first and only industry Professional Body of its kind, the ABP aims to facilitate the accreditation of
-            qualifying BEE Verification Agencies as set out in the Codes of Good Practice.
-          </div>
-          <div class="card-logo abp-logo">
-            <img src="../src/ABP_logo_medl-removebg-preview.png" alt="ABP Logo" style="width: 100%; height: auto;">
-          </div>
+                <!-- Mission -->
+                <div class="col-lg-6 mission-block d-flex flex-column justify-content-center p-4 p-lg-5">
+                    <div class="mission-content">
+                        <h3 class="mission-title">MISSION</h3>
+                        <div class="d-flex align-items-start mt-3 flex-column flex-sm-row">
+                            <i class="fas fa-bullseye fa-2x me-0 me-sm-3 mb-3 mb-sm-0" style="color: #000;"></i>
+                            <p class="mission-text">
+                                Is to achieve exponential growth and expansion through various sources including service offering, Business Acquisition, Joint Venture and Network firms by empowering and developing our clients, staff and communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="credential-card" data-delay="200">
-          <div class="card-content">
-            The South African National Accreditation System (SANAS) is the only national body responsible for carrying
-            out accreditations in respect of conformity assessment, as mandated through the Accreditation for Conformity
-            Assessment, Calibration and Good Laboratory Practice Act (Act 19 of 2006)
-          </div>
-          <div class="card-logo sanas-logo">
-            <img src="../src/sanas-logo.svg" alt="SANAS Logo" style="width: 100%; height: auto;">
-          </div>
-        </div>
-
-        <div class="credential-card" data-delay="400">
-          <div class="card-content">
-            We are established by Section 13B of B-BBEE Act 46 of 2013 and we have jurisdiction throughout the South
-            Africa. We must be impartial and perform our functions without fear, favor or prejudice, in the most
-            cost-effective manner and in accordance with the values and principles mentioned in section 195 of the
-            Constitution. In terms of Section 13E, we are financed from money that is appropriated by Parliament for the
-            B-BBEE Commission, and money lawfully received from any other source. The Auditor - General is mandated to
-            audit our financial records every year.
-          </div>
-          <!-- <div class="card-logo">
-                        <div class="logo-placeholder">B-BBEE Commission<br><small>Section 13B of B-BBEE Act 46 of 2013</small></div>
-                    </div> -->
-        </div>
-      </div>
+    <!-- Our Values Section -->
+    <section class="values-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12 text-center mb-4 mb-lg-0 order-2 order-lg-1">
+                    <h2 class="section-heading">
+                        <span class="black-text">OUR</span>
+                        <span class="orange-text">VALUES</span>
+                    </h2>
+                    <div class="values-image-container">
+                        <img src="/src/image-removebg-preview.png" class="img-fluid values-image" alt="Our Values">
+                    </div>
+                </div>
+                
+               <div class="col-lg-4 col-md-12 order-1 order-lg-2">
+  <div class="values-container">
+    <div class="value-item">
+      <div class="number-circle">1</div>
+      <h3 class="value-text">Empowerment</h3>
     </div>
-  </section>
+    <div class="value-item">
+      <div class="number-circle">2</div>
+      <h3 class="value-text">Integrity</h3>
+    </div>
+    <div class="value-item">
+      <div class="number-circle">3</div>
+      <h3 class="value-text">Innovation</h3>
+    </div>
+    <div class="value-item">
+      <div class="number-circle">4</div>
+      <h3 class="value-text">Partnership</h3>
+    </div>
+    <div class="value-item">
+      <div class="number-circle">5</div>
+      <h3 class="value-text">Quality</h3>
+    </div>
+  </div>
+</div>
 
+            </div>
+        </div>
+    </section>
 
-  <a href="https://wa.me/27761234567" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6 experience-image-col order-2 order-lg-1">
+                    <div class="experience-image-container">
+                        <img src="../src/experiance-removebg-preview.png" alt="Experience" class="experience-image">
+                    </div>
+                </div>
 
-  <!-- footer -->
-   <footer class="footer">
+                <div class="col-lg-6 experience-content-col order-1 order-lg-2">
+                    <div class="experience-content">
+                        <p class="experience-text">
+                            <span class="highlight">Azania BEE Solutions</span> is a brand backed by leadership that has 10 years of industry experience and a client base across industries, sectors, and regulatory environments.
+                        </p>
+
+                        <p class="experience-text">
+                            Azania is best positioned and suited to draw from our expertise to ensure that the client receives an outstanding experience.
+                        </p>
+
+                        <p class="experience-text">
+                            <span class="highlight">Azania BEE Solutions</span> offers B-BBEEE Verification services to businesses of all sizes (EME, QSE or Generic). We have Branches in Gauteng, Limpopo and KZN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Credentials Section -->
+    <section class="credentials-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="our">Our</span> Credentials
+            </h2>
+
+            <div class="credentials-grid">
+                <div class="credential-card">
+                    <div class="card-content">
+                        (ABP) is established to lead the Broad-Based Black Economic Empowerment (B-BBEE) Verification and BEE Consultancy industry as it takes up a vital role in the transformation of the South African economy. The first and only industry Professional Body of its kind, the ABP aims to facilitate the accreditation of qualifying BEE Verification Agencies as set out in the Codes of Good Practice.
+                    </div>
+                    <div class="card-logo">
+                        <img src="../src/ABP_logo_medl-removebg-preview.png" alt="ABP Logo">
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="card-content">
+                        The South African National Accreditation System (SANAS) is the only national body responsible for carrying out accreditations in respect of conformity assessment, as mandated through the Accreditation for Conformity Assessment, Calibration and Good Laboratory Practice Act (Act 19 of 2006).
+                    </div>
+                    <div class="card-logo">
+                        <img src="../src/sanas-logo.svg" alt="SANAS Logo">
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="card-content">
+                        We are established by Section 13B of B-BBEE Act 46 of 2013 and we have jurisdiction throughout South Africa. We must be impartial and perform our functions without fear, favor or prejudice, in the most cost-effective manner and in accordance with the values and principles mentioned in section 195 of the Constitution. In terms of Section 13E, we are financed from money that is appropriated by Parliament for the B-BBEE Commission, and money lawfully received from any other source.
+                    </div>
+                    <div class="card-logo logo-text">
+                        <div class="logo-placeholder">
+                            B-BBEE Commission
+                            <small>Section 13B Act 46 of 2013</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/27761234567" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <!-- Column 1 -->
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
                     <h5>Company</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">History</a></li>
@@ -328,10 +297,9 @@
                     </ul>
                 </div>
                 
-                <!-- Column 2 -->
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
                     <h5>Legal</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms and Conditions</a></li>
@@ -339,8 +307,7 @@
                     </ul>
                 </div>
                 
-                <!-- Column 3 -->
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
                     <h5>Social</h5>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i> Facebook</a><br>
@@ -349,8 +316,7 @@
                     </div>
                 </div>
                 
-                <!-- Column 4 -->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
                     <h5>Address</h5>
                     <div class="contact-info">
                         <p>
@@ -362,7 +328,6 @@
                     </div>
                 </div>
                 
-                <!-- Column 5 -->
                 <div class="col-md-3 col-sm-6">
                     <h5>Contact</h5>
                     <div class="contact-info">
@@ -374,9 +339,10 @@
             </div>
         </div>
     </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <script src="outCredentials.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="outCredentials.js"></script>
+</body>
 </html>

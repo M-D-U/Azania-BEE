@@ -1,331 +1,349 @@
-/* ===========================
-   Main Body Styling
-=========================== */
-/* body.main {     
-    position: relative;     
-    min-height: 100vh;     
-    background: url('src/azania\ team\ work.jpg') center/cover no-repeat; 
-}   */
-
-/* Dark overlay over the entire body */ 
-body.main::before {     
-    content: "";     
-    position: fixed;     
-    top: 0;     
-    left: 0;     
-    width: 100%;     
-    height: 100%;     
-    background-color: rgba(0, 0, 0, 0.2); /* 20% dark overlay */     
-    z-index: -1; /* Push it behind content */ 
-}  
-
-/* ===========================
-   Hero Section
-=========================== */
-.hero-section .col-lg-6:last-child {   
-    padding-right: 0; /* removes right padding */ 
-    display: flex;
-    justify-content: flex-end; /* Aligns content to the right */
-    align-items: center; /* Centers vertically */
-}   
-
-/* ===========================
-   Navbar Styling
-=========================== */
-.navbar .nav-link {          
-    font-weight: 500;     
-    color: #333 !important; 
-}  
-
-.navbar .nav-link:hover {     
-    color: #f58220 !important; 
-}  
-
-.navbar .nav-link.active {     
-    font-weight: 800 !important; 
-}   
-
-/* Default transparent navbar */ 
-.navbar {     
-    transition: background-color 0.3s ease;     
-    background-color: rgba(206, 205, 205, 0.5) !important; 
-}  
-
-/* Scrolled navbar */ 
-.navbar.scrolled {     
-    background-color: rgba(206, 205, 205, 1) !important; 
-} 
-
-/* ===========================
-   Profile Section
-=========================== */
-.profile-circle {     
-    background-color: #f58220; /* Orange color */     
-    height: 500px;     
-    width: 500px;     
-    border-radius: 50%;
-    position: relative; 
-    display: flex;
-    align-items: flex-end; 
-    justify-content: center; 
-}  
-
-.businessmanImage {     
-    height: 420px;     
-    width: 420px;     
-    border-radius: 50%;
-    object-fit: cover; 
-    position: absolute;
-    bottom: 0; 
-    right: 20px; 
-    transform: translateX(10px); 
-}  
-
-.getQuoteBtn {     
-    font-weight: 900 !important; 
-}   
-
-/* ===========================
-   WhatsApp Float Button
-=========================== */
-.whatsapp-float {   
-    position: fixed;   
-    bottom: 20px;   
-    left: 20px;   
-    background-color: #25D366;   
-    color: white;   
-    border-radius: 50%;   
-    padding: 15px 18px;   
-    font-size: 28px;   
-    z-index: 1000;   
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);   
-    transition: background-color 0.3s ease;   
-    text-decoration: none;   
-    display: flex;   
-    align-items: center;   
-    justify-content: center; 
-}  
-
-.whatsapp-float:hover {   
-    background-color: #1ebe57; 
+/* =======================
+   Global Styles
+======================= */
+body.main {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  font-family: 'Arial', sans-serif;
+  color: #000;
 }
 
-/* ===========================
-   Values Section
-=========================== */
-.values-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-}
-
-.value-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    transition: transform 0.2s ease;
-}
-
-.value-item:hover {
-    transform: translateX(5px);
-}
-
-.number-circle {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    color: black;
-    border: 8px solid black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 25px;
-    flex-shrink: 0;
-}
-
-.value-text {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
-
-.value-item:last-child {
-    margin-bottom: 0;
-}
-
-/* ===========================
-   Vision and Mission Section
-=========================== */
-.containerVisionAndMission {
-    display: flex;
-    max-width: 1200px;
-    margin: 50px auto;
-    align-items: stretch;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Left side - Vision */
-.vision-section {
-    background: #000;
-    width: 50%;
-    padding: 40px 50px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
-}
-
-.vision-section h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-.vision-section h2 .highlight {
-    color: #f58220; 
-}
-
-.vision-section h3 {
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.vision-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 500;
-    max-width: 440px;
-}
-
-.vision-section i {
-    color: #fff;
-    font-size: 2rem;
-    margin-right: 15px;
-}
-
-/* Right side - Mission */
-.mission-section {
-    background: #f58220;
-    width: 50%;
-    padding: 40px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-}
-
-.mission-section h3 {
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.mission-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 500;
-    max-width: 480px;
-}
-
-.mission-section i {
-    color: #fff;
-    font-size: 2rem;
-    margin-right: 15px;
-}
-
-/* ===========================
+/* =======================
    About Us Section
-=========================== */
-.about-us {
-    background-color: white;
-    position: relative;
-}
-
-.about-heading {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1;
-}
-
-.about-heading .black-text {
-    color: black;
-    display: block;
-}
-
-.about-heading .orange-text {
-    color: #f58220; 
-    display: block;
-}
-
-.about-text {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #000;
-}
-
-.decor-line {
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    width: 120px;
-    opacity: 0.8;
-} */
-
-/* About Us Section */
+======================= */
 .about-title {
   font-weight: 900;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 4rem;
+  line-height: 0.9;
 }
 
 .about-black {
-  color: black;
+  color: #000;
 }
 
 .about-orange {
-  color: #f58220; /* Azania orange */
+  color: #FF6B35;
 }
 
 .about-content {
-  font-weight: 900;
-  font-size: 1rem;
-  font-family: sans-serif;
-  line-height: 2;
-  text-align: justify;
-  margin: 50px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  /* font-weight: 600; */
 }
 
-/* .img-fluid{
-    margin: 0 auto;
-    display: block;
-} */
-/* ===========================
+/* =======================
    Why Us Section
-=========================== */
-.why-us {
-    background-color: #fff;
-}
-
+======================= */
 .why-heading {
-    font-size: 5.5rem;
-    font-weight: 900;
-    margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-.why-heading .black-text {
-    color: #000;
+.black-text {
+  color: #000;
 }
 
-.why-heading .orange-text {
+.orange-text {
+  color: #FF6B35;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.why-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkbox-icon {
+  width: 22px;   /* adjust size to match your design */
+  height: auto;
+  margin-right: 12px;
+}
+
+.why-list i {
+  color: #FF6B35;
+  margin-right: 10px;
+}
+
+.checkbox-icon {
+  width: 40px;   /* adjust size to match your design */
+  height: auto;
+  margin-right: 12px;
+}
+
+.why-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* =======================
+   Vision & Mission
+======================= */
+.vision-block {
+  background-color: #f8f9fa;
+}
+
+.mission-block {
+  background-color: #FF6B35;
+  color: #fff;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.vision-title,
+.mission-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.vision-text,
+.mission-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =======================
+   Values Section
+======================= */
+.section-heading {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.number-circle {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #000;   /* orange outline */
+  border-radius: 50%;
+  color: #000;              /* number color */
+  font-weight: 900;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;      /* white background */
+  flex-shrink: 0;              /* prevent shrinking */
+  transition: all 0.3s ease;
+}
+
+.value-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* Optional hover effect */
+.value-item:hover .number-circle {
+  background-color: #f58220;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .values-container {
+    align-items: flex-start; /* make whole list left aligned */
+  }
+
+  .value-item {
+    justify-content: flex-start; /* push numbers + text to left */
+  }
+
+  .number-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 10px; /* ensure spacing from text */
+  }
+
+  .value-text {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =======================
+   Experience Section
+======================= */
+.experience-image-container {
+    background: #f58220;
+  text-align: center;
+}
+
+.experience-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience-content {
+  padding: 3rem;
+}
+
+.experience-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #FF6B35;
+  font-weight: 700;
+}
+
+/* =======================
+   Credentials Section
+======================= */
+.credentials-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.credential-card {
+  background: #f58220;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.credential-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-logo img {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  max-width: 150px;
+  margin-top: 1rem;
+}
+.our{
     color: #f58220;
+}
+/* =======================
+   Responsive Styles
+======================= */
+@media (max-width: 992px) {
+  .about-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .why-heading {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .experience-content {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .values-container {
+    align-items: center;
+  }
+
+  .value-text {
+    font-size: 1.1rem;
+  }
+
+  .experience-content {
+    padding: 1.5rem;
+  }
+
+  .credential-card {
+    padding: 1.5rem;
+  }
+}
+
+
+/* ===========================
+   WHY US SECTION
+   =========================== */
+.why-us {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.whyus-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.whyus-heading .black-text {
+    color: var(--primary-black);
+}
+
+.whyus-heading .orange-text {
+    color: #f58220 !important;
+    color: var(--primary-orange);
+}
+
+.why-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .why-list li {
@@ -333,244 +351,114 @@ body.main::before {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .why-list i {
-    color: #f58220;
+    color: var(--primary-orange);
     font-size: 1.5rem;
     margin-right: 0.8rem;
 }
 
-/* Right column styling for image alignment */
-.why-us .col-lg-6:last-child {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.whyus-image {
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
 }
 
-.why-us .container {
-    padding-right: 0;
-    max-width: none;
-    width: 100%;
+/* Responsive */
+@media (max-width: 768px) {
+    .whyus-heading {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .why-list {
+        text-align: left;
+    }
+
+    .whyus-image {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
 }
 
-.why-us .row {
-    margin-right: 0;
-}
-
-.why-image {
-    max-width: none;
-    width: auto;
-    height: 400px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: 0;
-    border-radius: 0;
-}
 
 /* ===========================
-   Responsive Adjustments
-=========================== */
-@media (max-width: 900px) {
-    .containerVisionAndMission {
-        flex-direction: column;
-        max-width: 95%;
-        margin: 20px auto;
-    }
-
-    .vision-section,
-    .mission-section {
-        width: 100%;
-        clip-path: none;
-        padding: 30px 20px;
-        margin-bottom: 20px;
-    }
-
-    .vision-section h2 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .vision-section p,
-    .mission-section p {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .vision-section i,
-    .mission-section i {
-        display: block;
-        margin: 0 auto 15px auto;
-    }
-
-    ul.values-list {
-        list-style: none;
-        padding: 0;
-        max-width: 300px;
-    }
-
-    ul.values-list li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-
-    ul.values-list li .fa-stack {
-        width: 2em;
-        height: 2em;
-        margin-right: 12px;
-        position: relative;
-        flex-shrink: 0;
-    }
-
-    ul.values-list li .fa-stack-1x {
-        color: black;
-    }
-
-    ul.values-list li .number-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: 900;
-        color: white;
-        font-size: 1em;
-        user-select: none;
-    }
+   NAVBAR STYLES
+   =========================== */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(206, 205, 205, 0.5) !important; /* default transparent */
+    
 }
 
-@media (max-width: 768px) {
-    .values-container {
-        padding: 20px;
-    }
-
-    .number-circle {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        margin-right: 20px;
-    }
-
-    .value-text {
-        font-size: 24px;
-    }
-
-    .about-heading {
-        font-size: 3rem;
-        text-align: center;
-    }
-    
-    .decor-line {
-        display: none;
-    }
-    
-    .about-text {
-        text-align: center;
-    }
-
-    .why-heading {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    
-    .why-list {
-        text-align: center;
-    }
-
-    .why-us .col-lg-6:last-child {
-        justify-content: center;
-        padding-right: 15px;
-    }
-
-    .why-image {
-        width: 90%;
-    }
-
-    .profile-circle {
-        height: 400px;
-        width: 400px;
-    }
-
-    .businessmanImage {
-        height: 320px;
-        width: 320px;
-    }
+/* Solid background after scroll */
+.navbar.scrolled {
+    background-color: rgba(206, 205, 205, 1) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-
-/* our values */
-
-/* Adjust Values Section for smaller screens */
-@media (max-width: 991px) {
-  .why-heading {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .why-image {
-    max-width: 80%;
-    /* margin: 0 auto 20px auto; */
-    display: block;
-  }
-
-  .values-container {
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  .value-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .number-circle {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+/* Nav Links */
+.navbar .nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 576px) {
-  .why-heading {
-    font-size: 2rem;
-  }
+.navbar .nav-link:hover {
+    color: #f58220 !important;
+}
 
-  .value-text {
+.navbar .nav-link.active {
+    font-weight: 800 !important;
+    color: #000 !important;
+}
+
+/* Social Icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #000;
     font-size: 20px;
-  }
+    transition: all 0.3s ease;
+    text-decoration: none; 
 }
 
+.social-icon:hover {
+    background-color: #f58220;
+    border-color: #f58220;
+    color: #fff !important;
+}
 
-/* about us */
-
-/* Tablet adjustments */
-@media (max-width: 991px) {
-  .about-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .about-content {
+/* Quote Button */
+.get-quote-btn {
+    border-radius: 0px;
+    padding: 0.6rem 1.4rem;
     font-size: 0.95rem;
-    text-align: center;
-    margin-top: 20px;
-  }
+    text-transform: uppercase;
 }
 
-/* Mobile adjustments */
-@media (max-width: 576px) {
-  .about-title {
-    font-size: 2rem;
-  }
+/* Mobile Tweaks */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        text-align: center;
+        padding: 0.7rem;
+    }
 
-  .about-content {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
+    .social-icon {
+        margin: 0 5px;
+    }
+
+    .get-quote-btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
 }

@@ -96,3 +96,38 @@ body.main::before {
 .whatsapp-float:hover {   
     background-color: #1ebe57; 
 }
+
+/* Tablet (below 992px) */
+@media (max-width: 991px) {
+  .profile-circle {
+    height: 400px;
+    width: 400px;
+  }
+  .businessmanImage {
+    height: 320px;
+    width: 320px;
+    right: 10px;
+    transform: translateX(5px);
+  }
+}
+
+/* Mobile (below 576px) */
+@media (max-width: 576px) {
+  .hero-section {
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .profile-circle {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto; /* center on mobile */
+  }
+
+  .businessmanImage {
+    height: 240px;
+    width: 240px;
+    right: 0;
+    transform: none;
+  }
+}
